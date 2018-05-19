@@ -72,27 +72,6 @@ function pb(edge = 0) {
   };
 }
 
-
-
-function spinner_sync_update(msg, arr) {
-
-    readline.cursorTo(process.stdout, 0)
-    readline.clearLine(process.stdout, 0)
-    process.stdout.write(msg.replace(/%s/, arr[0]))
-    arr.push(arr.shift())
-  
-}
-
-function spinner_sync_stop (msg) {
-  readline.cursorTo(process.stdout, 0)
-  readline.clearLine(process.stdout, 0)
-
-  if (msg !== undefined) {
-    process.stdout.write(msg)
-  }
-}
-
-
 function fileExists(filePath) {
   try {
     return fs.statSync(filePath).isFile()
