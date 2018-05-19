@@ -1,0 +1,13 @@
+{
+  "name": "LevenshteinDic",
+  "version": "1.0.0",
+  "description": "Script for creating Levenshtein dictionary",
+  "author": {
+    "name": "andreyefgs",
+    "url": "http://lingvoboard.ru/"
+  },
+  "private": true,
+  "dependencies": {
+    "js-levenshtein": "latest"
+  }
+}
